@@ -2,7 +2,7 @@ IMAGE   = nagios-server
 VERSION = 14.04
 RELEASE = 1
 
-REGISTRY = docker-registry.corp.cloudwatt.com
+REGISTRY = hub.docker.com
 
 build:
 	docker build --force-rm --tag=$(REGISTRY)/$(IMAGE):$(VERSION)-$(RELEASE) .
