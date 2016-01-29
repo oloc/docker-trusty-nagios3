@@ -3,7 +3,7 @@
 NAGIOS_HOME='/etc/nagios3'
 
 if [ ! -f ${NAGIOS_HOME}/htpasswd.users ] ; then
-  htpasswd -c -b -s ${NAGIOS_HOME}/htpasswd.users nagios nagios
+  htpasswd -c -b -s ${NAGIOS_HOME}/htpasswd.users nagiosadmin nagios
   chown -R nagios.nagios ${NAGIOS_HOME}/htpasswd.users
 fi
 
